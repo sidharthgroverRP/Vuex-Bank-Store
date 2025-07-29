@@ -32,7 +32,7 @@ import type { BankState } from '../store';
 export default defineComponent({
   name: 'Bank',
   setup() {
-    const store = useStore<BankState>();
+    const store = useStore();
     const amount = ref(0);
     const rate = ref(0.05);
     const years = ref(1);
