@@ -107,7 +107,7 @@ export default defineComponent({
       }
     }
     function withdrawMoney() {
-      if (amount.value > 0 && store.state.balance > amount.value) {
+      if (amount.value > 0 && store.state.balance >= amount.value) {
         store.dispatch('withdrawMoney', amount.value);
       }
     }
